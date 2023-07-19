@@ -5,5 +5,4 @@
 #
 
 with open("/tmp/destroymoonbase.gif", "r") as f:
-  contents = f.read().replace("$", '').replace("#", '')
-  print(contents)
+  print(f.read().replace("$", '').replace("#", ''))
