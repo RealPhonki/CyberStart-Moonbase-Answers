@@ -15,4 +15,4 @@ wordNumbers = data.rstrip().split("\n")
 
 file = open("/tmp/words.txt")
 content = file.readlines()
-print(''.join([file.readlines()[int(n)].strip('\n') + ' ' for n in wordNumbers]))
+print(''.join([content[int(n)].strip('\n') + ' ' for n in wordNumbers]))
