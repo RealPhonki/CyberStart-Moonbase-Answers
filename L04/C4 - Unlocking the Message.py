@@ -7,9 +7,9 @@
 #
 
 from urllib.request import Request, urlopen
-req = Request('http://127.0.0.1:8082')
+req = Request('http://127.0.0.1:8082') # create a request object linked to the url
 
 for i in range(5500, 5601):
-  req.add_header('x-api-key', str(i))
-  content = urlopen(req).read()
-  print(content)
+  req.add_header('x-api-key', str(i)) # send a message to port i
+  content = urlopen(req).read()       # read the content
+  print(content)                      # print the content of the page
