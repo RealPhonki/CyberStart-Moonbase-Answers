@@ -10,4 +10,4 @@ import zlib
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect(('localhost', 10000))
-print(zlib.decompress(client.recv(1024), 16.zlib+MAX_WBITS)
+print(zlib.decompress(client.recv(1024), 16+zlib.MAX_WBITS))
